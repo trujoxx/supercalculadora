@@ -23,17 +23,19 @@ public class App {
             opcion = s.nextInt();
 
             switch (opcion) {
-                case 1:
-                    System.out.println("1.Triángulo");
-                    System.out.println("2.Circulo");
-                    System.out.println("3.Pentágono");
-                    System.out.println("4.Rectángulo");
-                    System.out.println("5.Pitágoras");
-                    System.out.println("0.Volver");
-                    System.out.println("Escoge una operación:");
-                    opcion = s.nextInt();
 
+                case 1:
+                    volver = false;
                     while (!volver) {
+                        System.out.println("1.Triángulo");
+                        System.out.println("2.Circulo");
+                        System.out.println("3.Pentágono");
+                        System.out.println("4.Rectángulo");
+                        System.out.println("5.Pitágoras");
+                        System.out.println("0.Volver");
+                        System.out.println("Escoge una operación:");
+                        opcion = s.nextInt();
+
                         switch (opcion) {
                             case 1:
                                 poligonos.triangulo();
@@ -52,21 +54,22 @@ public class App {
                                 break;
                             case 0:
                                 volver = true;
-                            default:
+                                break;
                         }
                     }
 
                     break;
                 case 2:
-                    System.out.println("1.Sumar");
-                    System.out.println("2.Restar");
-                    System.out.println("3.División");
-                    System.out.println("4.Multiplicación");
-                    System.out.println("0.Volver");
-                    System.out.println("Escoge una operación:");
-                    opcion = s.nextInt();
-
+                    volver = false;
                     while (!volver) {
+                        System.out.println("1.Sumar");
+                        System.out.println("2.Restar");
+                        System.out.println("3.División");
+                        System.out.println("4.Multiplicación");
+                        System.out.println("0.Volver");
+                        System.out.println("Escoge una operación:");
+                        opcion = s.nextInt();
+
                         switch (opcion) {
                             case 1:
 
