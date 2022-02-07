@@ -28,6 +28,7 @@ public class App {
                     System.out.println("2.Circulo");
                     System.out.println("3.Pentágono");
                     System.out.println("4.Rectángulo");
+                    System.out.println("5.Pitágoras");
                     System.out.println("0.Volver");
                     System.out.println("Escoge una operación:");
                     opcion = s.nextInt();
@@ -45,6 +46,9 @@ public class App {
                                 break;
                             case 4:
                                 poligonos.rectangulo();
+                                break;
+                            case 5:
+                                poligonos.pitagoras();
                                 break;
                             case 0:
                                 volver = true;
