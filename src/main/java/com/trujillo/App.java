@@ -20,6 +20,7 @@ public class App {
             volver = false;
             switch (opcion) {
                 case 1:
+                volver = false;
                     while (!volver) {
                         System.out.println("1.Triángulo");
                         System.out.println("2.Circulo");
@@ -54,6 +55,7 @@ public class App {
 
                     break;
                 case 2:
+                volver = false;
                     while (!volver) {
                         System.out.println("1.Sumar");
                         System.out.println("2.Restar");
@@ -83,6 +85,7 @@ public class App {
 
                     break;
                 case 3:
+                volver= false;
                     while (!volver) {
                         System.out.println("1.Ecuación de primer grado");
                         System.out.println("2.Ecuación de segundo grado");
