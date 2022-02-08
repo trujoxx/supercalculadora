@@ -19,8 +19,9 @@ public class App {
             opcion = s.nextInt();
             volver = false;
             switch (opcion) {
+
                 case 1:
-                volver = false;
+                    volver = false;
                     while (!volver) {
                         System.out.println("1.Triángulo");
                         System.out.println("2.Circulo");
@@ -49,13 +50,16 @@ public class App {
                                 break;
                             case 0:
                                 volver = true;
-                            default:
+                                break;
                         }
                     }
 
                     break;
                 case 2:
-                volver = false;
+
+
+                    volver = false;
+
                     while (!volver) {
                         System.out.println("1.Sumar");
                         System.out.println("2.Restar");
