@@ -2,15 +2,11 @@ package com.trujillo;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class App {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        boolean salir = false;
         boolean volver = false;
+        boolean salir = false;
         int opcion;
 
         while (!salir) {
@@ -21,19 +17,19 @@ public class App {
 
             System.out.println("Introduce una opción: ");
             opcion = s.nextInt();
-
+            volver = false;
             switch (opcion) {
                 case 1:
-                    System.out.println("1.Triángulo");
-                    System.out.println("2.Circulo");
-                    System.out.println("3.Pentágono");
-                    System.out.println("4.Rectángulo");
-                    System.out.println("5.Pitágoras");
-                    System.out.println("0.Volver");
-                    System.out.println("Escoge una operación:");
-                    opcion = s.nextInt();
-
                     while (!volver) {
+                        System.out.println("1.Triángulo");
+                        System.out.println("2.Circulo");
+                        System.out.println("3.Pentágono");
+                        System.out.println("4.Rectángulo");
+                        System.out.println("5.Pitágoras");
+                        System.out.println("0.Volver");
+                        System.out.println("Escoge una operación:");
+                        opcion = s.nextInt();
+
                         switch (opcion) {
                             case 1:
                                 poligonos.triangulo();
@@ -58,15 +54,14 @@ public class App {
 
                     break;
                 case 2:
-                    System.out.println("1.Sumar");
-                    System.out.println("2.Restar");
-                    System.out.println("3.División");
-                    System.out.println("4.Multiplicación");
-                    System.out.println("0.Volver");
-                    System.out.println("Escoge una operación:");
-                    opcion = s.nextInt();
-
                     while (!volver) {
+                        System.out.println("1.Sumar");
+                        System.out.println("2.Restar");
+                        System.out.println("3.División");
+                        System.out.println("4.Multiplicación");
+                        System.out.println("0.Volver");
+                        System.out.println("Escoge una operación:");
+                        opcion = s.nextInt();
                         switch (opcion) {
                             case 1:
 
@@ -87,6 +82,24 @@ public class App {
                     }
 
                     break;
+                case 3:
+                    while (!volver) {
+                        System.out.println("1.Ecuación de primer grado");
+                        System.out.println("2.Ecuación de segundo grado");
+                        System.out.println("0.Volver");
+                        System.out.println("Escoge una operación:");
+                        opcion = s.nextInt();
+                        switch (opcion) {
+                            case 1:
+
+                                break;
+                            case 2:
+                                System.out.println(ecuacion.segundoGrado());
+                                break;
+                            case 0:
+                                volver = true;
+                        }
+                    }
                 case 0:
                     salir = true;
             }
