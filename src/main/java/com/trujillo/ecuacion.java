@@ -47,5 +47,17 @@ public class ecuacion {
         return mensaje;
     }
 
+    public static void primerGrado(){
+        double a,b, resultado;
+        System.out.println("Indique el valor de a");
+        a = leer.nextDouble();
+        System.out.println("Indique el valor de b");
+        b=leer.nextDouble();
+
+        resultado=a/b;
+
+        System.out.println("El valor de x en la ecuación es " + resultado);
+    }
+
 
 }
