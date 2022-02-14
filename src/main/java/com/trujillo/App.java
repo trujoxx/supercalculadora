@@ -63,21 +63,33 @@ public class App {
                         System.out.println("2.Restar");
                         System.out.println("3.División");
                         System.out.println("4.Multiplicación");
+                        System.out.println("5.Logaritmo");
+                        System.out.println("6.Raiz Cuadrada");
+                        System.out.println("7.Exponente");
                         System.out.println("0.Volver");
                         System.out.println("Escoge una operación:");
                         opcion = s.nextInt();
                         switch (opcion) {
                             case 1:
-
+                                System.out.println(aritmetica.suma());
                                 break;
                             case 2:
-
+                                System.out.println(aritmetica.resta());
                                 break;
                             case 3:
-
+                                System.out.println(aritmetica.division());
                                 break;
                             case 4:
-
+                                System.out.println(aritmetica.multiplicacion());
+                                break;
+                            case 5:
+                                System.out.println(aritmetica.logaritmo());
+                                break;
+                            case 6:
+                                System.out.println(aritmetica.raiz());
+                                break;
+                            case 7:
+                                System.out.println(aritmetica.exponente());
                                 break;
                             case 0:
                                 volver = true;
@@ -87,7 +99,7 @@ public class App {
 
                     break;
                 case 3:
-                volver= false;
+                    volver = false;
                     while (!volver) {
                         System.out.println("1.Ecuación de primer grado");
                         System.out.println("2.Ecuación de segundo grado");
@@ -96,7 +108,7 @@ public class App {
                         opcion = s.nextInt();
                         switch (opcion) {
                             case 1:
-
+                                ecuacion.primerGrado();
                                 break;
                             case 2:
                                 System.out.println(ecuacion.segundoGrado());
