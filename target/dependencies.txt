@@ -1,0 +1,5 @@
+digraph "com.trujillo:supercalculadora:jar:1.0-SNAPSHOT" { 
+	"com.trujillo:supercalculadora:jar:1.0-SNAPSHOT" -> "junit:junit:jar:4.11:test" ; 
+	"com.trujillo:supercalculadora:jar:1.0-SNAPSHOT" -> "commons-cli:commons-cli:jar:1.5.0:compile" ; 
+	"junit:junit:jar:4.11:test" -> "org.hamcrest:hamcrest-core:jar:1.3:test" ; 
+ } 

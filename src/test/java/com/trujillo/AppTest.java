@@ -44,15 +44,7 @@ public class AppTest
 
     @Test
     @DisplayName("Test entrada a Menú de Aritmética, opción A")
-    public void testCasoMenuAritmetica() {
-       
-        provideInput("A\n1\n10\n33\nX\nX");
-        
-        App.main(new String[0]);
-        assertThat(getOutput(), containsString("Resultado: 43") );
-        
-    }
-
+    
     @AfterEach
     public void restoreSystemInputOutput() {
         System.setIn(systemIn);
