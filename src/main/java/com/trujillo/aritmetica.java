@@ -5,14 +5,9 @@ import java.util.Scanner;
 public class aritmetica {
     static Scanner s = new Scanner(System.in);
 
-    public static double suma() {
+    public static double suma(double a, double b) {
 
-        System.out.println("Introduce el primer número");
-        int a = s.nextInt();
-        System.out.println("Introduce el segundo número");
-        int b = s.nextInt();
-
-        int resultado = a + b;
+        double resultado = a + b;
 
         return resultado;
     }

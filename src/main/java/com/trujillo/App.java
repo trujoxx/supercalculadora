@@ -71,7 +71,7 @@ public class App {
                         opcion = s.nextInt();
                         switch (opcion) {
                             case 1:
-                                System.out.println(aritmetica.suma());
+                                System.out.println(aritmetica.suma(2,4));
                                 break;
                             case 2:
                                 System.out.println(aritmetica.resta());
