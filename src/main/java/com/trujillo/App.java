@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         aritmetica aritmetica = new aritmetica();
-
+        poligonos poligonos = new poligonos();
+        ecuacion ecuacion = new ecuacion();
 
         Scanner s = new Scanner(System.in);
         boolean volver = false;
@@ -37,19 +38,19 @@ public class App {
 
                         switch (opcion) {
                             case 1:
-                                poligonos.triangulo();
+                                poligonos.triangulo(4, 2);
                                 break;
                             case 2:
-                                poligonos.circulo();
+                                poligonos.circulo(5);
                                 break;
                             case 3:
-                                poligonos.pentagono();
+                                poligonos.pentagono(5);
                                 break;
                             case 4:
-                                poligonos.rectangulo();
+                                poligonos.rectangulo(3, 2);
                                 break;
                             case 5:
-                                poligonos.pitagoras();
+                                poligonos.pitagoras(5, 6);
                                 break;
                             case 0:
                                 volver = true;
@@ -74,16 +75,16 @@ public class App {
                         opcion = s.nextInt();
                         switch (opcion) {
                             case 1:
-                                System.out.println(aritmetica.suma(2,4));
+                                System.out.println(aritmetica.suma(2, 4));
                                 break;
                             case 2:
-                                System.out.println(aritmetica.resta(2,4));
+                                System.out.println(aritmetica.resta(2, 4));
                                 break;
                             case 3:
-                                System.out.println(aritmetica.division(2,4));
+                                System.out.println(aritmetica.division(2, 4));
                                 break;
                             case 4:
-                                System.out.println(aritmetica.multiplicacion(2,4));
+                                System.out.println(aritmetica.multiplicacion(2, 4));
                                 break;
                             case 5:
                                 System.out.println(aritmetica.logaritmo(4));
@@ -92,7 +93,7 @@ public class App {
                                 System.out.println(aritmetica.raiz(4));
                                 break;
                             case 7:
-                                System.out.println(aritmetica.exponente(2,4));
+                                System.out.println(aritmetica.exponente(2, 4));
                                 break;
                             case 0:
                                 volver = true;
@@ -111,10 +112,10 @@ public class App {
                         opcion = s.nextInt();
                         switch (opcion) {
                             case 1:
-                                ecuacion.primerGrado();
+                                ecuacion.primerGrado(5, 2);
                                 break;
                             case 2:
-                                System.out.println(ecuacion.segundoGrado());
+                                System.out.println(ecuacion.segundoGrado(1, 8, 12));
                                 break;
                             case 0:
                                 volver = true;

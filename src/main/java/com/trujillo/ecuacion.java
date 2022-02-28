@@ -6,18 +6,11 @@ public class ecuacion {
 
     static Scanner leer = new Scanner(System.in);
 
-    public static double[] calculoSegundoGrado() {
-        double a, b, c, discriminante;
+    public double[] calculoSegundoGrado(double a, double b, double c) {
+        double discriminante;
         double[] solucion = new double[2];
 
-        System.out.println("Indique el valor de a:");
-        a = leer.nextDouble();
-        System.out.println("Indique el valor de b:");
-        b = leer.nextDouble();
-        System.out.println("Indique el valor de c:");
-        c = leer.nextDouble();
-
-        discriminante = Math.pow(b, 2) - 4 * a * c;
+        discriminante = Math.pow(b, 2) - (4 * a * c);
 
         if (discriminante == 0) {
             solucion[0] = 0;
@@ -42,29 +35,25 @@ public class ecuacion {
         return solucion;
     }
 
-    public static String segundoGrado() {
-        String mensaje = "";
-        if (calculoSegundoGrado() == null) {
-            mensaje = "No tiene solución";
+    public double[] segundoGrado(double a, double b, double c) {
+        double [] solucion = new double[2];
+        if (calculoSegundoGrado(a, b, c) == null) {
+            solucion[0] = 0;
         } else {
-            for (double resultado : calculoSegundoGrado()) {
-                mensaje = "La solución: " + resultado;
+            for (int i = 0; i < solucion.length; i++) {
+                solucion[i] = calculoSegundoGrado(a, b, c)[i];
             }
         }
 
-        return mensaje;
+        return solucion;
     }
 
-    public static void primerGrado() {
-        double a, b, resultado;
-        System.out.println("Indique el valor de a");
-        a = leer.nextDouble();
-        System.out.println("Indique el valor de b");
-        b = leer.nextDouble();
+    public double primerGrado(double a, double b) {
+        double resultado;
 
         resultado = a / b;
 
-        System.out.println("El valor de x en la ecuación es " + resultado);
+        return resultado;
     }
 
 }

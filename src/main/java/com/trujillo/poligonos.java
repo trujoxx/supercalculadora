@@ -5,17 +5,9 @@ import java.util.Scanner;
 public class poligonos {
     static Scanner s = new Scanner(System.in);
 
-    public static double triangulo() {
+    public double triangulo(double b, double a) {
 
         double area;
-        double b;
-        double a;
-
-        System.out.println("Introduce la base: ");
-        b = s.nextDouble();
-
-        System.out.println("Introduce la altura: ");
-        a = s.nextDouble();
 
         area = (b * a) / 2;
 
@@ -24,17 +16,9 @@ public class poligonos {
         return area;
     }
 
-    public static double rectangulo() {
+    public double rectangulo(double b, double a) {
 
         double area;
-        double b;
-        double a;
-
-        System.out.println("Introduce la base: ");
-        b = s.nextDouble();
-
-        System.out.println("Introduce la altura: ");
-        a = s.nextDouble();
 
         area = (b * a);
 
@@ -43,13 +27,9 @@ public class poligonos {
         return area;
     }
 
-    public static double circulo() {
+    public double circulo(double r) {
 
         double area;
-        double r;
-
-        System.out.println("Introduce el radio: ");
-        r = s.nextDouble();
 
         area = Math.PI * (r * r);
 
@@ -58,13 +38,9 @@ public class poligonos {
         return area;
     }
 
-    public static double pentagono() {
+    public double pentagono(double l) {
 
         double area;
-        double l;
-
-        System.out.println("Introduce la cantidad de lados: ");
-        l = s.nextDouble();
 
         area = (5 * l * (l / 2)) / 2;
 
@@ -75,12 +51,9 @@ public class poligonos {
     
     }
 
-    public static double pitagoras(){
+    public double pitagoras(double c1, double c2){
 
-        double c1,c2,h;
-
-        c1= s.nextDouble();
-        c2= s.nextDouble();
+        double h;
 
         h= Math.sqrt(Math.pow(c1,2) + Math.pow(c2,2));
 
