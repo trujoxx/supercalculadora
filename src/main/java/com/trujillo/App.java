@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        aritmetica aritmetica = new aritmetica();
+
+
         Scanner s = new Scanner(System.in);
         boolean volver = false;
         boolean salir = false;
@@ -74,22 +77,22 @@ public class App {
                                 System.out.println(aritmetica.suma(2,4));
                                 break;
                             case 2:
-                                System.out.println(aritmetica.resta());
+                                System.out.println(aritmetica.resta(2,4));
                                 break;
                             case 3:
-                                System.out.println(aritmetica.division());
+                                System.out.println(aritmetica.division(2,4));
                                 break;
                             case 4:
-                                System.out.println(aritmetica.multiplicacion());
+                                System.out.println(aritmetica.multiplicacion(2,4));
                                 break;
                             case 5:
-                                System.out.println(aritmetica.logaritmo());
+                                System.out.println(aritmetica.logaritmo(4));
                                 break;
                             case 6:
-                                System.out.println(aritmetica.raiz());
+                                System.out.println(aritmetica.raiz(4));
                                 break;
                             case 7:
-                                System.out.println(aritmetica.exponente());
+                                System.out.println(aritmetica.exponente(2,4));
                                 break;
                             case 0:
                                 volver = true;
